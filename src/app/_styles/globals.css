@@ -1,0 +1,124 @@
+@import "tailwindcss";
+@plugin '../_heroui/hero.js';
+/* Note: You may need to change the path to fit your project structure */
+@source '../../../node_modules/@heroui/*/dist/**/*.{js,ts,jsx,tsx}';
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-background: #fff4e6;
+  --color-background-white: #f9f9fa;
+  --color-text: #2f2f2f;
+}
+
+@layer base {
+  .section-sm {
+    @apply py-8 md:py-12 md:px-8 px-4;
+  }
+
+  .section-md {
+    @apply py-12 md:py-16 md:px-8 px-4;
+  }
+
+  .section-lg {
+    @apply py-18 md:py-24 md:px-8 px-4;
+  }
+
+  .section-xl {
+    @apply py-24 md:py-32 md:px-8 px-4;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 transition;
+  }
+
+  .btn-sm {
+    @apply md:px-4 px-3 md:py-2 py-1 md:text-sm text-sm;
+  }
+
+  .btn-md {
+    @apply md:px-6 px-4 md:py-3 py-2 md:text-base text-base;
+  }
+
+  .btn-lg {
+    @apply md:px-8 px-6 md:py-4 py-3 md:text-xl text-lg;
+  }
+
+  .btn-primary {
+    @apply bg-gray-950 text-white hover:bg-gray-900;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent text-gray-950 border border-gray-950 hover:bg-gray-950 hover:text-white;
+  }
+
+  .loader {
+    width: 45px;
+    aspect-ratio: 0.75;
+    --c: no-repeat linear-gradient(#333 0 0);
+    background:
+      var(--c) 0% 50%,
+      var(--c) 50% 50%,
+      var(--c) 100% 50%;
+    background-size: 20% 50%;
+    animation: l6 1s infinite linear;
+  }
+
+  @keyframes l6 {
+    20% {
+      background-position:
+        0% 0%,
+        50% 50%,
+        100% 50%;
+    }
+
+    40% {
+      background-position:
+        0% 100%,
+        50% 0%,
+        100% 50%;
+    }
+
+    60% {
+      background-position:
+        0% 50%,
+        50% 100%,
+        100% 0%;
+    }
+
+    80% {
+      background-position:
+        0% 50%,
+        50% 50%,
+        100% 100%;
+    }
+  }
+
+  .loader-circle {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background:
+      radial-gradient(farthest-side, #333 94%, #333) top/8px 8px no-repeat,
+      conic-gradient(#0000 30%, #333);
+    -webkit-mask: radial-gradient(farthest-side,
+        #0000 calc(100% - 8px),
+        #000 0);
+    animation: l13 1s infinite linear;
+  }
+
+  @keyframes l13 {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+}
+
+body {
+  background-color: var(--color-background-white);
+  color: var(--color-text);
+}
+
+::selection {
+  background-color: var(--color-text);
+  color: var(--color-background-white);
+}

@@ -1,0 +1,37 @@
+export const navLinks = [
+    { href: "/", label: "Home" },
+    { href: "/shop", label: "Shop" },
+    { href: "/about", label: "About" },
+    { href: "/contact", label: "Contact" },
+];
+
+export const egyptGovernorates = [
+    // محافظات مصر
+    { key: 'cairo', ar: "القاهرة", en: "Cairo" },
+    { key: 'giza', ar: "الجيزة", en: "Giza" },
+    { key: 'alexandria', ar: "الإسكندرية", en: "Alexandria" },
+    { key: 'dakahlia', ar: "الدقهلية", en: "Dakahlia" },
+    { key: 'red_sea', ar: "البحر الأحمر", en: "Red Sea" },
+    { key: 'beheira', ar: "البحيرة", en: "Beheira" },
+    { key: 'fayoum', ar: "الفيوم", en: "Fayoum" },
+    { key: 'gharbia', ar: "الغربية", en: "Gharbia" },
+    { key: 'ismailia', ar: "الإسماعيلية", en: "Ismailia" },
+    { key: 'menofia', ar: "المنوفية", en: "Menofia" },
+    { key: 'minya', ar: "المنيا", en: "Minya" },
+    { key: 'qalyubia', ar: "القليوبية", en: "Qalyubia" },
+    { key: 'suez', ar: "السويس", en: "Suez" },
+    { key: 'aswan', ar: "أسوان", en: "Aswan" },
+    { key: 'asyut', ar: "أسيوط", en: "Asyut" },
+    { key: 'beni_suef', ar: "بني سويف", en: "Beni Suef" },
+    { key: 'port_said', ar: "بور سعيد", en: "Port Said" },
+    { key: 'damietta', ar: "دمياط", en: "Damietta" },
+    { key: 'sharkia', ar: "الشرقية", en: "Sharkia" },
+    { key: 'sohag', ar: "سوهاج", en: "Sohag" },
+    { key: 'south_sinai', ar: "جنوب سيناء", en: "South Sinai" },
+    { key: 'kafr_el_sheikh', ar: "كفر الشيخ", en: "Kafr El Sheikh" },
+    { key: 'matrouh', ar: "مطروح", en: "Matrouh" },
+    { key: 'luxor', ar: "الأقصر", en: "Luxor" },
+    { key: 'qena', ar: "قنا", en: "Qena" },
+    { key: 'north_sinai', ar: "شمال سيناء", en: "North Sinai" },
+    { key: 'monufia', ar: "المنوفية", en: "Monufia" },
+];
