@@ -8,7 +8,7 @@ function notFound() {
             <p className="text-lg">The page you are looking for does not exist.</p>
 
             <div>
-                <ButtonLink href="/" className="mt-6 btn btn-primary">
+                <ButtonLink href="/" className="mt-6 btn btn-primary btn-md">
                     Go to Home
                 </ButtonLink>
             </div>

@@ -1,14 +1,12 @@
 import { Suspense } from "react"
 import Heading from "../_components/Heading"
-import { getProducts } from "../_lib/data-services"
 import ItemsList from "../_components/ItemsList"
 import { Spinner } from "../_heroui/herouiComponents"
-import { cacheLife } from "next/cache"
+import { getProducts } from "../_lib/data-services"
+
+export const revalidate = 60 * 60 * 1; // 1 hour
 
 async function page() {
-    'use cache'
-    cacheLife('hours', 4);
-
     const items = await getProducts()
 
     return (

@@ -132,7 +132,6 @@ async function Footer() {
 }
 
 async function getCurrentYear() {
-    'use cache';
     return new Date().getFullYear();
 }
 
